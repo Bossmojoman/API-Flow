@@ -1,0 +1,162 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Task Management",
+		"description": "Endpoints of the \"To-Do list v2\" and the \"Simple To-Do List\"",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "userTasksListCount",
+			"request": {
+				"url": "http://acme.io/api/userTasksListCount",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{access_token}}",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Manhattan\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "projectTasks related to a project",
+			"request": {
+				"url": {
+					"raw": "http://acme.io/api/projectTasks?filter[refId]=4899b665-e262-11e6-9312-063c4950d72f&filter[refType]=project",
+					"host": [
+						"http://acme.io/api"
+					],
+					"path": [
+						"projectTasks"
+					],
+					"query": [
+						{
+							"key": "filter[refId]",
+							"value": "4899b665-e262-11e6-9312-063c4950d72f",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "filter[refType]",
+							"value": "project\n",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{access_token}}",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Manhattan\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "simpleTasks related to a project",
+			"request": {
+				"url": {
+					"raw": "http://acme.io/api/tasks?filter[refUuid]=4ccfd70f-b33f-11e6-9312-063c4950d72f&filter[refType]=deal&sort=createdAt",
+					"host": [
+						"http://acme.io/api"
+					],
+					"path": [
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "filter[refUuid]",
+							"value": "4ccfd70f-b33f-11e6-9312-063c4950d72f",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "filter[refType]",
+							"value": "deal",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "sort",
+							"value": "createdAt",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{access_token}}",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Manhattan\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "All the tasks of a user",
+			"request": {
+				"url": "http://acme.io/api/userTasksList",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{access_token}}",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Manhattan\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

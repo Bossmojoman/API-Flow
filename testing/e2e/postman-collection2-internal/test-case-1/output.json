@@ -1,0 +1,1046 @@
+{
+  "_model": {
+    "name": "api.core.models",
+    "version": "0.1.0"
+  },
+  "resources": {
+    "userTasksListCount": {
+      "_model": {
+        "name": "resource.models",
+        "version": "0.1.0"
+      },
+      "name": null,
+      "uuid": null,
+      "endpoints": {
+        "acme.io/api": {
+          "_model": {
+            "name": "reference.models",
+            "version": "0.1.0"
+          },
+          "type": "endpoint",
+          "uuid": "acme.io/api",
+          "overlay": null
+        }
+      },
+      "path": {
+        "_model": {
+          "name": "url.models",
+          "version": "0.1.0"
+        },
+        "protocol": [
+          null
+        ],
+        "slashes": null,
+        "auth": null,
+        "host": null,
+        "port": null,
+        "hostname": null,
+        "href": "/userTasksListCount",
+        "path": "/userTasksListCount",
+        "pathname": {
+          "_model": {
+            "name": "url-component.models",
+            "version": "0.1.0"
+          },
+          "componentName": "pathname",
+          "string": "/userTasksListCount",
+          "parameter": {
+            "_model": {
+              "name": "parameter.core.models",
+              "version": "0.1.0"
+            },
+            "in": null,
+            "usedIn": "request",
+            "uuid": null,
+            "key": "pathname",
+            "name": "pathname",
+            "description": null,
+            "examples": [],
+            "type": "string",
+            "format": null,
+            "default": "/userTasksListCount",
+            "required": false,
+            "superType": null,
+            "value": null,
+            "constraints": [],
+            "applicableContexts": [],
+            "interfaces": {}
+          },
+          "variableDelimiters": [
+            "{{",
+            "}}",
+            ":"
+          ]
+        },
+        "query": null,
+        "search": null,
+        "hash": null,
+        "variableDelimiters": [
+          "{{",
+          "}}",
+          ":"
+        ]
+      },
+      "methods": {
+        "get": {
+          "_model": {
+            "name": "request.models",
+            "version": "0.1.0"
+          },
+          "id": null,
+          "endpoints": {
+            "acme.io/api": {
+              "_model": {
+                "name": "reference.models",
+                "version": "0.1.0"
+              },
+              "type": "endpoint",
+              "uuid": "acme.io/api",
+              "overlay": null
+            }
+          },
+          "name": "userTasksListCount",
+          "description": null,
+          "method": "get",
+          "parameters": {
+            "_model": {
+              "name": "parameter-container.core.models",
+              "version": "0.1.0"
+            },
+            "headers": {
+              "Authorization": {
+                "_model": {
+                  "name": "parameter.core.models",
+                  "version": "0.1.0"
+                },
+                "in": null,
+                "usedIn": "request",
+                "uuid": null,
+                "key": "Authorization",
+                "name": "Authorization",
+                "description": null,
+                "examples": [],
+                "type": "string",
+                "format": null,
+                "default": null,
+                "required": false,
+                "superType": null,
+                "value": null,
+                "constraints": [
+                  {
+                    "_model": {
+                      "name": "json.constraint.models",
+                      "version": "0.1.0"
+                    },
+                    "name": "json",
+                    "value": {
+                      "$ref": "#/definitions/access_token"
+                    }
+                  }
+                ],
+                "applicableContexts": [],
+                "interfaces": {}
+              },
+              "Accept": {
+                "_model": {
+                  "name": "parameter.core.models",
+                  "version": "0.1.0"
+                },
+                "in": null,
+                "usedIn": "request",
+                "uuid": null,
+                "key": "Accept",
+                "name": "Accept",
+                "description": null,
+                "examples": [],
+                "type": "string",
+                "format": null,
+                "default": "application/vnd.api+json",
+                "required": false,
+                "superType": null,
+                "value": null,
+                "constraints": [],
+                "applicableContexts": [],
+                "interfaces": {}
+              }
+            },
+            "queries": {},
+            "body": {
+              "raw": {
+                "_model": {
+                  "name": "parameter.core.models",
+                  "version": "0.1.0"
+                },
+                "in": null,
+                "usedIn": "request",
+                "uuid": null,
+                "key": null,
+                "name": null,
+                "description": null,
+                "examples": [],
+                "type": "string",
+                "format": null,
+                "default": "{\n    \"name\": \"Manhattan\"\n}",
+                "required": false,
+                "superType": null,
+                "value": null,
+                "constraints": [],
+                "applicableContexts": [],
+                "interfaces": {}
+              }
+            },
+            "path": {}
+          },
+          "contexts": [],
+          "auths": [],
+          "responses": {},
+          "timeout": null,
+          "tags": [],
+          "interfaces": {}
+        }
+      },
+      "description": null,
+      "interfaces": {}
+    },
+    "projectTasks related to a project": {
+      "_model": {
+        "name": "resource.models",
+        "version": "0.1.0"
+      },
+      "name": null,
+      "uuid": null,
+      "endpoints": {
+        "acme.io/api": {
+          "_model": {
+            "name": "reference.models",
+            "version": "0.1.0"
+          },
+          "type": "endpoint",
+          "uuid": "acme.io/api",
+          "overlay": null
+        }
+      },
+      "path": {
+        "_model": {
+          "name": "url.models",
+          "version": "0.1.0"
+        },
+        "protocol": [
+          null
+        ],
+        "slashes": null,
+        "auth": null,
+        "host": null,
+        "port": null,
+        "hostname": null,
+        "href": "/projectTasks",
+        "path": "/projectTasks",
+        "pathname": {
+          "_model": {
+            "name": "url-component.models",
+            "version": "0.1.0"
+          },
+          "componentName": "pathname",
+          "string": "/projectTasks",
+          "parameter": {
+            "_model": {
+              "name": "parameter.core.models",
+              "version": "0.1.0"
+            },
+            "in": null,
+            "usedIn": "request",
+            "uuid": null,
+            "key": "pathname",
+            "name": "pathname",
+            "description": null,
+            "examples": [],
+            "type": "string",
+            "format": null,
+            "default": "/projectTasks",
+            "required": false,
+            "superType": null,
+            "value": null,
+            "constraints": [],
+            "applicableContexts": [],
+            "interfaces": {}
+          },
+          "variableDelimiters": [
+            "{{",
+            "}}",
+            ":"
+          ]
+        },
+        "query": null,
+        "search": null,
+        "hash": null,
+        "variableDelimiters": [
+          "{{",
+          "}}",
+          ":"
+        ]
+      },
+      "methods": {
+        "get": {
+          "_model": {
+            "name": "request.models",
+            "version": "0.1.0"
+          },
+          "id": null,
+          "endpoints": {
+            "acme.io/api": {
+              "_model": {
+                "name": "reference.models",
+                "version": "0.1.0"
+              },
+              "type": "endpoint",
+              "uuid": "acme.io/api",
+              "overlay": null
+            }
+          },
+          "name": "projectTasks related to a project",
+          "description": null,
+          "method": "get",
+          "parameters": {
+            "_model": {
+              "name": "parameter-container.core.models",
+              "version": "0.1.0"
+            },
+            "headers": {
+              "Authorization": {
+                "_model": {
+                  "name": "parameter.core.models",
+                  "version": "0.1.0"
+                },
+                "in": null,
+                "usedIn": "request",
+                "uuid": null,
+                "key": "Authorization",
+                "name": "Authorization",
+                "description": null,
+                "examples": [],
+                "type": "string",
+                "format": null,
+                "default": null,
+                "required": false,
+                "superType": null,
+                "value": null,
+                "constraints": [
+                  {
+                    "_model": {
+                      "name": "json.constraint.models",
+                      "version": "0.1.0"
+                    },
+                    "name": "json",
+                    "value": {
+                      "$ref": "#/definitions/access_token"
+                    }
+                  }
+                ],
+                "applicableContexts": [],
+                "interfaces": {}
+              },
+              "Accept": {
+                "_model": {
+                  "name": "parameter.core.models",
+                  "version": "0.1.0"
+                },
+                "in": null,
+                "usedIn": "request",
+                "uuid": null,
+                "key": "Accept",
+                "name": "Accept",
+                "description": null,
+                "examples": [],
+                "type": "string",
+                "format": null,
+                "default": "application/vnd.api+json",
+                "required": false,
+                "superType": null,
+                "value": null,
+                "constraints": [],
+                "applicableContexts": [],
+                "interfaces": {}
+              }
+            },
+            "queries": {
+              "filter[refId]": {
+                "_model": {
+                  "name": "parameter.core.models",
+                  "version": "0.1.0"
+                },
+                "in": null,
+                "usedIn": "request",
+                "uuid": null,
+                "key": "filter[refId]",
+                "name": "filter[refId]",
+                "description": null,
+                "examples": [],
+                "type": "string",
+                "format": null,
+                "default": "4899b665-e262-11e6-9312-063c4950d72f",
+                "required": false,
+                "superType": null,
+                "value": null,
+                "constraints": [],
+                "applicableContexts": [],
+                "interfaces": {}
+              },
+              "filter[refType]": {
+                "_model": {
+                  "name": "parameter.core.models",
+                  "version": "0.1.0"
+                },
+                "in": null,
+                "usedIn": "request",
+                "uuid": null,
+                "key": "filter[refType]",
+                "name": "filter[refType]",
+                "description": null,
+                "examples": [],
+                "type": "string",
+                "format": null,
+                "default": "project",
+                "required": false,
+                "superType": null,
+                "value": null,
+                "constraints": [],
+                "applicableContexts": [],
+                "interfaces": {}
+              }
+            },
+            "body": {
+              "raw": {
+                "_model": {
+                  "name": "parameter.core.models",
+                  "version": "0.1.0"
+                },
+                "in": null,
+                "usedIn": "request",
+                "uuid": null,
+                "key": null,
+                "name": null,
+                "description": null,
+                "examples": [],
+                "type": "string",
+                "format": null,
+                "default": "{\n    \"name\": \"Manhattan\"\n}",
+                "required": false,
+                "superType": null,
+                "value": null,
+                "constraints": [],
+                "applicableContexts": [],
+                "interfaces": {}
+              }
+            },
+            "path": {}
+          },
+          "contexts": [],
+          "auths": [],
+          "responses": {},
+          "timeout": null,
+          "tags": [],
+          "interfaces": {}
+        }
+      },
+      "description": null,
+      "interfaces": {}
+    },
+    "simpleTasks related to a project": {
+      "_model": {
+        "name": "resource.models",
+        "version": "0.1.0"
+      },
+      "name": null,
+      "uuid": null,
+      "endpoints": {
+        "acme.io/api": {
+          "_model": {
+            "name": "reference.models",
+            "version": "0.1.0"
+          },
+          "type": "endpoint",
+          "uuid": "acme.io/api",
+          "overlay": null
+        }
+      },
+      "path": {
+        "_model": {
+          "name": "url.models",
+          "version": "0.1.0"
+        },
+        "protocol": [
+          null
+        ],
+        "slashes": null,
+        "auth": null,
+        "host": null,
+        "port": null,
+        "hostname": null,
+        "href": "/tasks",
+        "path": "/tasks",
+        "pathname": {
+          "_model": {
+            "name": "url-component.models",
+            "version": "0.1.0"
+          },
+          "componentName": "pathname",
+          "string": "/tasks",
+          "parameter": {
+            "_model": {
+              "name": "parameter.core.models",
+              "version": "0.1.0"
+            },
+            "in": null,
+            "usedIn": "request",
+            "uuid": null,
+            "key": "pathname",
+            "name": "pathname",
+            "description": null,
+            "examples": [],
+            "type": "string",
+            "format": null,
+            "default": "/tasks",
+            "required": false,
+            "superType": null,
+            "value": null,
+            "constraints": [],
+            "applicableContexts": [],
+            "interfaces": {}
+          },
+          "variableDelimiters": [
+            "{{",
+            "}}",
+            ":"
+          ]
+        },
+        "query": null,
+        "search": null,
+        "hash": null,
+        "variableDelimiters": [
+          "{{",
+          "}}",
+          ":"
+        ]
+      },
+      "methods": {
+        "get": {
+          "_model": {
+            "name": "request.models",
+            "version": "0.1.0"
+          },
+          "id": null,
+          "endpoints": {
+            "acme.io/api": {
+              "_model": {
+                "name": "reference.models",
+                "version": "0.1.0"
+              },
+              "type": "endpoint",
+              "uuid": "acme.io/api",
+              "overlay": null
+            }
+          },
+          "name": "simpleTasks related to a project",
+          "description": null,
+          "method": "get",
+          "parameters": {
+            "_model": {
+              "name": "parameter-container.core.models",
+              "version": "0.1.0"
+            },
+            "headers": {
+              "Authorization": {
+                "_model": {
+                  "name": "parameter.core.models",
+                  "version": "0.1.0"
+                },
+                "in": null,
+                "usedIn": "request",
+                "uuid": null,
+                "key": "Authorization",
+                "name": "Authorization",
+                "description": null,
+                "examples": [],
+                "type": "string",
+                "format": null,
+                "default": null,
+                "required": false,
+                "superType": null,
+                "value": null,
+                "constraints": [
+                  {
+                    "_model": {
+                      "name": "json.constraint.models",
+                      "version": "0.1.0"
+                    },
+                    "name": "json",
+                    "value": {
+                      "$ref": "#/definitions/access_token"
+                    }
+                  }
+                ],
+                "applicableContexts": [],
+                "interfaces": {}
+              },
+              "Accept": {
+                "_model": {
+                  "name": "parameter.core.models",
+                  "version": "0.1.0"
+                },
+                "in": null,
+                "usedIn": "request",
+                "uuid": null,
+                "key": "Accept",
+                "name": "Accept",
+                "description": null,
+                "examples": [],
+                "type": "string",
+                "format": null,
+                "default": "application/vnd.api+json",
+                "required": false,
+                "superType": null,
+                "value": null,
+                "constraints": [],
+                "applicableContexts": [],
+                "interfaces": {}
+              }
+            },
+            "queries": {
+              "filter[refUuid]": {
+                "_model": {
+                  "name": "parameter.core.models",
+                  "version": "0.1.0"
+                },
+                "in": null,
+                "usedIn": "request",
+                "uuid": null,
+                "key": "filter[refUuid]",
+                "name": "filter[refUuid]",
+                "description": null,
+                "examples": [],
+                "type": "string",
+                "format": null,
+                "default": "4ccfd70f-b33f-11e6-9312-063c4950d72f",
+                "required": false,
+                "superType": null,
+                "value": null,
+                "constraints": [],
+                "applicableContexts": [],
+                "interfaces": {}
+              },
+              "filter[refType]": {
+                "_model": {
+                  "name": "parameter.core.models",
+                  "version": "0.1.0"
+                },
+                "in": null,
+                "usedIn": "request",
+                "uuid": null,
+                "key": "filter[refType]",
+                "name": "filter[refType]",
+                "description": null,
+                "examples": [],
+                "type": "string",
+                "format": null,
+                "default": "deal",
+                "required": false,
+                "superType": null,
+                "value": null,
+                "constraints": [],
+                "applicableContexts": [],
+                "interfaces": {}
+              },
+              "sort": {
+                "_model": {
+                  "name": "parameter.core.models",
+                  "version": "0.1.0"
+                },
+                "in": null,
+                "usedIn": "request",
+                "uuid": null,
+                "key": "sort",
+                "name": "sort",
+                "description": null,
+                "examples": [],
+                "type": "string",
+                "format": null,
+                "default": "createdAt",
+                "required": false,
+                "superType": null,
+                "value": null,
+                "constraints": [],
+                "applicableContexts": [],
+                "interfaces": {}
+              }
+            },
+            "body": {
+              "raw": {
+                "_model": {
+                  "name": "parameter.core.models",
+                  "version": "0.1.0"
+                },
+                "in": null,
+                "usedIn": "request",
+                "uuid": null,
+                "key": null,
+                "name": null,
+                "description": null,
+                "examples": [],
+                "type": "string",
+                "format": null,
+                "default": "{\n    \"name\": \"Manhattan\"\n}",
+                "required": false,
+                "superType": null,
+                "value": null,
+                "constraints": [],
+                "applicableContexts": [],
+                "interfaces": {}
+              }
+            },
+            "path": {}
+          },
+          "contexts": [],
+          "auths": [],
+          "responses": {},
+          "timeout": null,
+          "tags": [],
+          "interfaces": {}
+        }
+      },
+      "description": null,
+      "interfaces": {}
+    },
+    "All the tasks of a user": {
+      "_model": {
+        "name": "resource.models",
+        "version": "0.1.0"
+      },
+      "name": null,
+      "uuid": null,
+      "endpoints": {
+        "acme.io/api": {
+          "_model": {
+            "name": "reference.models",
+            "version": "0.1.0"
+          },
+          "type": "endpoint",
+          "uuid": "acme.io/api",
+          "overlay": null
+        }
+      },
+      "path": {
+        "_model": {
+          "name": "url.models",
+          "version": "0.1.0"
+        },
+        "protocol": [
+          null
+        ],
+        "slashes": null,
+        "auth": null,
+        "host": null,
+        "port": null,
+        "hostname": null,
+        "href": "/userTasksList",
+        "path": "/userTasksList",
+        "pathname": {
+          "_model": {
+            "name": "url-component.models",
+            "version": "0.1.0"
+          },
+          "componentName": "pathname",
+          "string": "/userTasksList",
+          "parameter": {
+            "_model": {
+              "name": "parameter.core.models",
+              "version": "0.1.0"
+            },
+            "in": null,
+            "usedIn": "request",
+            "uuid": null,
+            "key": "pathname",
+            "name": "pathname",
+            "description": null,
+            "examples": [],
+            "type": "string",
+            "format": null,
+            "default": "/userTasksList",
+            "required": false,
+            "superType": null,
+            "value": null,
+            "constraints": [],
+            "applicableContexts": [],
+            "interfaces": {}
+          },
+          "variableDelimiters": [
+            "{{",
+            "}}",
+            ":"
+          ]
+        },
+        "query": null,
+        "search": null,
+        "hash": null,
+        "variableDelimiters": [
+          "{{",
+          "}}",
+          ":"
+        ]
+      },
+      "methods": {
+        "get": {
+          "_model": {
+            "name": "request.models",
+            "version": "0.1.0"
+          },
+          "id": null,
+          "endpoints": {
+            "acme.io/api": {
+              "_model": {
+                "name": "reference.models",
+                "version": "0.1.0"
+              },
+              "type": "endpoint",
+              "uuid": "acme.io/api",
+              "overlay": null
+            }
+          },
+          "name": "All the tasks of a user",
+          "description": null,
+          "method": "get",
+          "parameters": {
+            "_model": {
+              "name": "parameter-container.core.models",
+              "version": "0.1.0"
+            },
+            "headers": {
+              "Authorization": {
+                "_model": {
+                  "name": "parameter.core.models",
+                  "version": "0.1.0"
+                },
+                "in": null,
+                "usedIn": "request",
+                "uuid": null,
+                "key": "Authorization",
+                "name": "Authorization",
+                "description": null,
+                "examples": [],
+                "type": "string",
+                "format": null,
+                "default": null,
+                "required": false,
+                "superType": null,
+                "value": null,
+                "constraints": [
+                  {
+                    "_model": {
+                      "name": "json.constraint.models",
+                      "version": "0.1.0"
+                    },
+                    "name": "json",
+                    "value": {
+                      "$ref": "#/definitions/access_token"
+                    }
+                  }
+                ],
+                "applicableContexts": [],
+                "interfaces": {}
+              },
+              "Accept": {
+                "_model": {
+                  "name": "parameter.core.models",
+                  "version": "0.1.0"
+                },
+                "in": null,
+                "usedIn": "request",
+                "uuid": null,
+                "key": "Accept",
+                "name": "Accept",
+                "description": null,
+                "examples": [],
+                "type": "string",
+                "format": null,
+                "default": "application/vnd.api+json",
+                "required": false,
+                "superType": null,
+                "value": null,
+                "constraints": [],
+                "applicableContexts": [],
+                "interfaces": {}
+              }
+            },
+            "queries": {},
+            "body": {
+              "raw": {
+                "_model": {
+                  "name": "parameter.core.models",
+                  "version": "0.1.0"
+                },
+                "in": null,
+                "usedIn": "request",
+                "uuid": null,
+                "key": null,
+                "name": null,
+                "description": null,
+                "examples": [],
+                "type": "string",
+                "format": null,
+                "default": "{\n    \"name\": \"Manhattan\"\n}",
+                "required": false,
+                "superType": null,
+                "value": null,
+                "constraints": [],
+                "applicableContexts": [],
+                "interfaces": {}
+              }
+            },
+            "path": {}
+          },
+          "contexts": [],
+          "auths": [],
+          "responses": {},
+          "timeout": null,
+          "tags": [],
+          "interfaces": {}
+        }
+      },
+      "description": null,
+      "interfaces": {}
+    }
+  },
+  "group": {
+    "_model": {
+      "name": "group.models",
+      "version": "0.1.0"
+    },
+    "id": null,
+    "name": null,
+    "description": null,
+    "children": {
+      "userTasksListCount": "userTasksListCount",
+      "projectTasks related to a project": "projectTasks related to a project",
+      "simpleTasks related to a project": "simpleTasks related to a project",
+      "All the tasks of a user": "All the tasks of a user"
+    }
+  },
+  "store": {
+    "_model": {
+      "name": "store.models",
+      "version": "0.1.0"
+    },
+    "variable": {},
+    "constraint": {},
+    "endpoint": {
+      "acme.io/api": {
+        "_model": {
+          "name": "url.models",
+          "version": "0.1.0"
+        },
+        "protocol": [
+          "http:"
+        ],
+        "slashes": true,
+        "auth": null,
+        "host": "acme.io",
+        "port": null,
+        "hostname": {
+          "_model": {
+            "name": "url-component.models",
+            "version": "0.1.0"
+          },
+          "componentName": "hostname",
+          "string": "acme.io",
+          "parameter": {
+            "_model": {
+              "name": "parameter.core.models",
+              "version": "0.1.0"
+            },
+            "in": null,
+            "usedIn": "request",
+            "uuid": null,
+            "key": "hostname",
+            "name": "hostname",
+            "description": null,
+            "examples": [],
+            "type": "string",
+            "format": null,
+            "default": "acme.io",
+            "required": false,
+            "superType": null,
+            "value": null,
+            "constraints": [],
+            "applicableContexts": [],
+            "interfaces": {}
+          },
+          "variableDelimiters": [
+            "{{",
+            "}}",
+            ":"
+          ]
+        },
+        "href": "http://acme.io/api",
+        "path": "/api",
+        "pathname": {
+          "_model": {
+            "name": "url-component.models",
+            "version": "0.1.0"
+          },
+          "componentName": "pathname",
+          "string": "/api",
+          "parameter": {
+            "_model": {
+              "name": "parameter.core.models",
+              "version": "0.1.0"
+            },
+            "in": null,
+            "usedIn": "request",
+            "uuid": null,
+            "key": "pathname",
+            "name": "pathname",
+            "description": null,
+            "examples": [],
+            "type": "string",
+            "format": null,
+            "default": "/api",
+            "required": false,
+            "superType": null,
+            "value": null,
+            "constraints": [],
+            "applicableContexts": [],
+            "interfaces": {}
+          },
+          "variableDelimiters": [
+            "{{",
+            "}}",
+            ":"
+          ]
+        },
+        "query": null,
+        "search": null,
+        "hash": null,
+        "variableDelimiters": [
+          "{{",
+          "}}",
+          ":"
+        ]
+      }
+    },
+    "parameter": {},
+    "response": {},
+    "auth": {},
+    "interface": {}
+  },
+  "info": {
+    "_model": {
+      "name": "info.utils.models",
+      "version": "0.1.0"
+    },
+    "title": "Task Management",
+    "description": "Endpoints of the \"To-Do list v2\" and the \"Simple To-Do List\"",
+    "tos": null,
+    "contact": null,
+    "license": null,
+    "version": null
+  }
+}
